@@ -14,6 +14,7 @@ import { sample11 } from './sample11';
 import { sample12 } from './sample12';
 
 import { insightSamples } from './insightSamples';
+import { quanshang } from './quanshang';
 
 const sampleList: DataSample[] = [
   sample1,
@@ -58,4 +59,4 @@ export const DataSamples = {
   },
 };
 
-export { insightSamples };
+export { insightSamples, quanshang };

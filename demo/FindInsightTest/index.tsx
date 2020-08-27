@@ -4,13 +4,14 @@ import { dataInTable, dataInJSON } from '../utils';
 import { insightsFromDataset, Insight, getMappingForLib, Channels } from '../../packages/chart-advisor/src';
 import ReactJson from 'react-json-view';
 import { RowData } from '../../packages/datawizard/transform/src';
-import { insightSamples } from '../data-samples';
+import { insightSamples, quanshang } from '../data-samples';
 
 const sampleGetters: { name: string; getter: Function }[] = [];
 
-insightSamples.forEach((s) => {
+const samples = [...insightSamples, quanshang];
+samples.forEach((s) => {
   sampleGetters.push({
-    name: s.name,
+    name: s.name || 'UNKNOWN',
     getter: () => {
       return s.data;
     },
@@ -26,7 +27,7 @@ export function FindInsightTest() {
     return sampleData as RowData[];
   };
 
-  const initSample = 'TeamInfo';
+  const initSample = 'quanshang';
 
   const [insights, setInsights] = useState<Insight[]>([]);
   const [sampleName, setSampleName] = useState<string>(initSample); //xxx: sampleGetters[0].name
