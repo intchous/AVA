@@ -32,6 +32,7 @@ export interface Advice {
   type: ChartID;
   channels: Channels;
   score: number;
+  specification: any;
 }
 
 /**
@@ -404,6 +405,25 @@ export function dataPropsToSpecs(dataProps: FieldInfo[], options?: AdvisorOption
       type: t,
       channels,
       score,
+      specification: {
+        $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+        mark: 'bar',
+        encoding: {
+          column: {
+            field: '地区',
+            type: 'nominal',
+          },
+          y: {
+            field: '销售额',
+          },
+          x: {
+            field: '细分',
+          },
+          color: {
+            field: '细分',
+          },
+        },
+      },
     };
   });
 

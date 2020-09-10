@@ -15,5 +15,5 @@ export interface HexColorOptions extends RGBOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [prefix](./dw-random.hexcoloroptions.prefix.md) | <code>boolean</code> | has prefix or not <code>#</code> |
+|  [prefix](./dw-random.hexcoloroptions.prefix.md) | boolean | has prefix or not <code>#</code> |
 

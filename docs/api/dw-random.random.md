@@ -20,5 +20,5 @@ export interface Random extends TextRandom, WebRandom, ColorRandom, LocationRand
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [database](./dw-random.random.database.md) | <code>Database</code> | 所有database的合并 |
+|  [database](./dw-random.random.database.md) | [Database](./dw-random.database.md) | 所有database的合并 |
 

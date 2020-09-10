@@ -73,7 +73,7 @@ export function FindInsightTest() {
           if (configMapForType) {
             const channel = configMapForType[key as keyof Channels];
             if (channel) {
-              configs[channel] = value;
+              configs[channel as string] = value;
             }
           }
         }

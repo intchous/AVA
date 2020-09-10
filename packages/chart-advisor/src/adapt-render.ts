@@ -36,6 +36,9 @@ const g2Render: RenderFn = (dom, data, configs) => {
   return chart;
 };
 
+/**
+ * @beta
+ */
 export function adaptRender(dom: HTMLElement, data: any[], libraryName: ChartLibrary, libConfig: any) {
   const { type, configs } = libConfig;
   switch (libraryName) {

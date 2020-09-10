@@ -15,9 +15,9 @@ export interface UrlOptions extends DomainOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [domain](./dw-random.urloptions.domain.md) | <code>string</code> |  |
-|  [domainPrefix](./dw-random.urloptions.domainprefix.md) | <code>string</code> |  |
-|  [extensions](./dw-random.urloptions.extensions.md) | <code>string[]</code> |  |
-|  [path](./dw-random.urloptions.path.md) | <code>string</code> |  |
-|  [protocol](./dw-random.urloptions.protocol.md) | <code>string</code> |  |
+|  [domain](./dw-random.urloptions.domain.md) | string |  |
+|  [domainPrefix](./dw-random.urloptions.domainprefix.md) | string |  |
+|  [extensions](./dw-random.urloptions.extensions.md) | string\[\] |  |
+|  [path](./dw-random.urloptions.path.md) | string |  |
+|  [protocol](./dw-random.urloptions.protocol.md) | string |  |
 

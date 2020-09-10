@@ -16,5 +16,5 @@ export interface FloatOptions extends Interval
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [fixed](./dw-random.floatoptions.fixed.md) | <code>number</code> | precision |
+|  [fixed](./dw-random.floatoptions.fixed.md) | number | precision |
 

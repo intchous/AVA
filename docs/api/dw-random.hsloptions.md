@@ -15,5 +15,5 @@ export interface HSLOptions extends HSLBaseOPtions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [casing](./dw-random.hsloptions.casing.md) | <code>'lower' &#124; 'upper'</code> |  |
+|  [casing](./dw-random.hsloptions.casing.md) | 'lower' \| 'upper' |  |
 

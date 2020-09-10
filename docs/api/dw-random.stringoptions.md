@@ -15,5 +15,5 @@ export interface StringOptions extends CharacterOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [length](./dw-random.stringoptions.length.md) | <code>number</code> |  |
+|  [length](./dw-random.stringoptions.length.md) | number |  |
 

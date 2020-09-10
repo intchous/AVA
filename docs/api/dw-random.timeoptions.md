@@ -15,5 +15,5 @@ export interface TimeOptions extends Interval
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [short](./dw-random.timeoptions.short.md) | <code>boolean</code> | has the time offset |
+|  [short](./dw-random.timeoptions.short.md) | boolean | has the time offset |
 

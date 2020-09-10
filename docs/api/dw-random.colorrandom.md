@@ -16,7 +16,7 @@ export declare class ColorRandom extends BasicRandom
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [database](./dw-random.colorrandom.database.md) |  | <code>ColorDB</code> |  |
+|  [database](./dw-random.colorrandom.database.md) |  | [ColorDB](./dw-random.colordb.md) |  |
 
 ## Methods
 

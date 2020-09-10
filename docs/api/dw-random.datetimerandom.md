@@ -16,7 +16,7 @@ export declare class DateTimeRandom extends BasicRandom
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [database](./dw-random.datetimerandom.database.md) |  | <code>DateTimeDB</code> | return a random date which format is yyyy-MM-dd |
+|  [database](./dw-random.datetimerandom.database.md) |  | [DateTimeDB](./dw-random.datetimedb.md) | return a random date which format is yyyy-MM-dd |
 
 ## Methods
 

@@ -15,7 +15,7 @@ export interface RGBAOptions extends RGBBaseOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [casing](./dw-random.rgbaoptions.casing.md) | <code>'lower' &#124; 'upper'</code> |  |
-|  [maxA](./dw-random.rgbaoptions.maxa.md) | <code>number</code> |  |
-|  [minA](./dw-random.rgbaoptions.mina.md) | <code>number</code> |  |
+|  [casing](./dw-random.rgbaoptions.casing.md) | 'lower' \| 'upper' |  |
+|  [maxA](./dw-random.rgbaoptions.maxa.md) | number |  |
+|  [minA](./dw-random.rgbaoptions.mina.md) | number |  |
 

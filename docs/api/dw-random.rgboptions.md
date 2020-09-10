@@ -15,5 +15,5 @@ export interface RGBOptions extends RGBBaseOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [casing](./dw-random.rgboptions.casing.md) | <code>'lower' &#124; 'upper'</code> | the case |
+|  [casing](./dw-random.rgboptions.casing.md) | 'lower' \| 'upper' | the case |
 

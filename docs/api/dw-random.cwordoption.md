@@ -15,5 +15,5 @@ export interface CWordOption extends CCharacterOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [length](./dw-random.cwordoption.length.md) | <code>number</code> |  |
+|  [length](./dw-random.cwordoption.length.md) | number |  |
 

@@ -15,5 +15,5 @@ export interface CLastNameOptions extends Person
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [length](./dw-random.clastnameoptions.length.md) | <code>number</code> |  |
+|  [length](./dw-random.clastnameoptions.length.md) | number |  |
 

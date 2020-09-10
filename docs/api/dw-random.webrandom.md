@@ -16,7 +16,7 @@ export declare class WebRandom extends TextRandom
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [database](./dw-random.webrandom.database.md) |  | <code>WebDB &amp; TextDB</code> |  |
+|  [database](./dw-random.webrandom.database.md) |  | [WebDB](./dw-random.webdb.md) &amp; [TextDB](./dw-random.textdb.md) |  |
 
 ## Methods
 

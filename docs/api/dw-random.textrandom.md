@@ -16,7 +16,7 @@ export declare class TextRandom extends BasicRandom
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [database](./dw-random.textrandom.database.md) |  | <code>TextDB</code> |  |
+|  [database](./dw-random.textrandom.database.md) |  | [TextDB](./dw-random.textdb.md) |  |
 
 ## Methods
 

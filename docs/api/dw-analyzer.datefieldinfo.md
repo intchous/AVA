@@ -16,6 +16,6 @@ export interface DateFieldInfo extends FieldInfo
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [maximum](./dw-analyzer.datefieldinfo.maximum.md) | <code>string &#124; number &#124; Date</code> | maximum date |
-|  [minimum](./dw-analyzer.datefieldinfo.minimum.md) | <code>string &#124; number &#124; Date</code> | minimum date |
+|  [maximum](./dw-analyzer.datefieldinfo.maximum.md) | string \| number \| Date | maximum date |
+|  [minimum](./dw-analyzer.datefieldinfo.minimum.md) | string \| number \| Date | minimum date |
 

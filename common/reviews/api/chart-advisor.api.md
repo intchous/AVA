@@ -7,9 +7,13 @@
 import { AllSubspaceDatasetOptions } from '@antv/dw-transform';
 import { ChartID } from '@antv/knowledge';
 import * as DWAnalyzer from '@antv/dw-analyzer';
+import { GeometryOption } from '@antv/g2/lib/interface';
 import { LevelOfMeasurement } from '@antv/knowledge';
 import { Purpose } from '@antv/knowledge';
 import { RowData } from '@antv/dw-transform';
+
+// @beta (undocumented)
+export function adaptRender(dom: HTMLElement, data: any[], libraryName: ChartLibrary, libConfig: any): void;
 
 // @beta (undocumented)
 export interface Advice {
@@ -57,6 +61,8 @@ export interface Channels {
     // (undocumented)
     color?: string;
     // (undocumented)
+    geometry?: GeometryOption;
+    // (undocumented)
     radius?: string;
     // (undocumented)
     series?: string;
@@ -73,7 +79,7 @@ export interface Channels {
 }
 
 // @beta (undocumented)
-export type ChartLibrary = 'G2Plot' | 'antdCharts';
+export type ChartLibrary = 'G2Plot' | 'antdCharts' | 'G2';
 
 // @beta (undocumented)
 export type ConfigMapping = Partial<Record<ChartID, Channels>>;
