@@ -30,7 +30,7 @@ export * from './vega-lite';
 /**
  * @beta
  */
-export function dataToSpecs(data: any[], options?: AdvisorOptions, showLog = false): Advice[] {
+export function dataToAdvices(data: any[], options?: AdvisorOptions, showLog = false): Advice[] {
   if (showLog) console.log('💠💠💠💠💠💠 data 💠💠💠💠💠💠');
   if (showLog) console.log(data);
   if (showLog) console.log('🍯🍯🍯🍯🍯🍯 options 🍯🍯🍯🍯🍯🍯');
@@ -57,7 +57,10 @@ export function specRender(
   spec: Advice,
   libraryName: 'G2' | 'G2Plot' = 'G2Plot'
 ) {
+  console.log('sss');
+  console.log(container, data, spec, libraryName);
   const libconfig = specToLibConfig(spec, libraryName);
+  console.log(libconfig);
   if (!libconfig) return null;
   return libraryName === 'G2Plot' ? g2plotRender(container, data, libconfig) : g2Render(container, data, libconfig);
 }

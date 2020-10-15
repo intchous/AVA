@@ -1,4 +1,4 @@
-import { AdvisorOptions, Advice, dataToSpecs, specToLibConfig } from './advice-pipeline';
+import { AdvisorOptions, Advice, dataToAdvices, specToLibConfig } from './advice-pipeline';
 import EventEmitter from '@antv/event-emitter';
 import * as G2Plot from '@antv/g2plot';
 import { uuid, translate, createLayer, DEFAULT_FEEDBACK } from './util';
@@ -91,7 +91,7 @@ export class AutoPlot extends EventEmitter {
     }
     this.container = container;
     this.feedbackLayer = createLayer(container);
-    const advices = dataToSpecs(data, options);
+    const advices = dataToAdvices(data, options);
     this.advices = advices;
     this.options = options;
     this.feedback = this.options.feedback || DEFAULT_FEEDBACK('暂无推荐');

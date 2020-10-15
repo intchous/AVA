@@ -1,4 +1,4 @@
-import { dataToSpecs } from '../../../src';
+import { dataToAdvices } from '../../../src';
 
 describe('API - dataToSpecs', () => {
   describe('Results', () => {
@@ -9,7 +9,7 @@ describe('API - dataToSpecs', () => {
         { city: 'Shanghai', value: 600 },
       ];
 
-      const specs = dataToSpecs(data);
+      const specs = dataToAdvices(data);
 
       expect(specs).toEqual([
         {

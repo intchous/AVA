@@ -1,4 +1,4 @@
-import { g2Render, dataToSpecs, specToLibConfig } from '../../../src';
+import { g2Render, dataToAdvices, specToLibConfig } from '../../../src';
 import { createDiv } from '../../utils/dom';
 
 describe('API - g2Render', () => {
@@ -10,7 +10,7 @@ describe('API - g2Render', () => {
         { city: 'Shanghai', value: 600 },
       ];
 
-      const specs = dataToSpecs(data);
+      const specs = dataToAdvices(data);
       const spec = specs[0];
 
       const libConfig = specToLibConfig(spec, 'G2');
