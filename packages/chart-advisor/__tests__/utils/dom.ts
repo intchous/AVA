@@ -3,7 +3,7 @@
  * @param title
  * @param container
  */
-export function createDiv(title?: string, container: HTMLElement = document.body): HTMLElement {
+export function createDiv(title?: string, container: HTMLElement = document.body): HTMLDivElement {
   const div = document.createElement('div');
 
   if (title) {
@@ -20,7 +20,7 @@ export function createDiv(title?: string, container: HTMLElement = document.body
  * 移除 dom 元素
  * @param dom
  */
-export function removeDom(dom: HTMLElement) {
+export function removeDom(dom: HTMLDivElement) {
   const parent = dom.parentNode;
 
   if (parent) {

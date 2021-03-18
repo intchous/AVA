@@ -1,7 +1,7 @@
 import { get } from 'lodash';
 import { dataToDataProps, dataPropsToAdvices, autoChart } from '../../src';
 import { city_sex_active_trade } from '../data/nominal*n+interval*n';
-import { createDiv } from '../utils/dom';
+import { createDiv } from '../utils';
 
 describe('Chart Type - table', () => {
   it('pipeline', async () => {

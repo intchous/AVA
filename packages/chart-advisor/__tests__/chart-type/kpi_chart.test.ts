@@ -1,7 +1,7 @@
 import { get } from 'lodash';
 import { dataToDataProps, dataPropsToAdvices, autoChart } from '../../src';
 import { totalPrice, price_cost } from '../data/interval*n';
-import { createDiv } from '../utils/dom';
+import { createDiv } from '../utils';
 
 describe('Chart Type - Kpi Panel', () => {
   it('one card', async () => {

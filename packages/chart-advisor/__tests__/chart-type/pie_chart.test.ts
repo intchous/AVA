@@ -1,5 +1,5 @@
 import { autoChart } from '../../src';
-import { createDiv } from '../utils/dom';
+import { createDiv } from '../utils';
 import { area_sales } from '../data/nominal*1+interval*1';
 
 describe('Chart Type - Pie Chart', () => {

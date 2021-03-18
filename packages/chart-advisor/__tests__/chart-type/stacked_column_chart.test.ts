@@ -1,5 +1,5 @@
 import { autoChart } from '../../src';
-import { createDiv } from '../utils/dom';
+import { createDiv } from '../utils';
 import {
   city_gender_amount_complete,
   city_gender_amount_incomplete,

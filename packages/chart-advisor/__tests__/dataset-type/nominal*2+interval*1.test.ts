@@ -1,6 +1,6 @@
 import { dataToDataProps, dataPropsToAdvices, autoChart } from '../../src';
 import { city_gender_amount_complete as dataset1, hier_categories as dataset2 } from '../data/nominal*2+interval*1';
-import { createDiv } from '../utils/dom';
+import { createDiv } from '../utils';
 
 describe('DataSet - nominal*2+interval*1', () => {
   describe('with Value purpose', () => {

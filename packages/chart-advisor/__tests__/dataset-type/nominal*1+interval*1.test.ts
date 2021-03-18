@@ -1,6 +1,6 @@
 import { dataToDataProps, dataPropsToAdvices, autoChart } from '../../src';
 import { area_sales as dataset } from '../data/nominal*1+interval*1';
-import { createDiv } from '../utils/dom';
+import { createDiv } from '../utils';
 
 describe('DataSet - nominal*1+interval*1', () => {
   describe('with Value purpose', () => {

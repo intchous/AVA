@@ -1,6 +1,6 @@
 import { dataToDataProps, dataPropsToAdvices, autoChart } from '../../src';
 import { categories } from '../data/nominal*n';
-import { createDiv } from '../utils/dom';
+import { createDiv } from '../utils';
 
 describe('DataSet - nominal*n', () => {
   describe('Results', () => {
