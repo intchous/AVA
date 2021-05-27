@@ -248,10 +248,17 @@ export class TextRandom extends BasicRandom {
    * @param options - the params
    */
   phone(options?: PhoneOptions): string {
-    const { mobile, formatted } = initOptions(options, { mobile: true, formatted: false });
+    const { mobile, formatted, asterisk } = initOptions(options, { mobile: true, formatted: false, asterisk: false });
     let exp: RegExp;
-    if (mobile) exp = formatted ? /1[345789]\d-\d{4}-\d{4}/ : /1[345789]\d{9}/;
-    else exp = formatted ? /\d{3,4}-\d{7,8}/ : /\d{10, 12}/;
+    if (mobile) {
+      // add **** in mobile numbers
+      if (asterisk) exp = formatted ? /1[345789]\d-\*{4}-\d{4}/ : /1[345789]\d{2}\*{4}\d{4}/;
+      else exp = formatted ? /1[345789]\d-\d{4}-\d{4}/ : /1[345789]\d{9}/;
+    } else {
+      // add ** or *** in landline numbers
+      if (asterisk) exp = formatted ? /\d{3,4}-\d{3}\*{2,3}\d{2}/ : /\d{3,4}\d{3}\*{2,3}\d{2}/;
+      else exp = formatted ? /\d{3,4}-\d{7,8}/ : /\d{10,12}/;
+    }
     return this.randexp(exp);
   }
 
@@ -348,6 +355,8 @@ export interface PhoneOptions {
   mobile?: boolean;
   /** 是否格式化 */
   formatted?: boolean;
+  /** 是否使用星号(确保不存在真实号码)*/
+  asterisk?: boolean;
 }
 
 /** @public */
